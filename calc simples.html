@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculadora Simples</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<h2>Calculadora</h2>
+	<label>Digite o primeiro número:</label>
+	<input type="number" id="num1"><br><br>
+	<label>Digite o segundo número:</label>
+	<input type="number" id="num2"><br><br>
+	<button onclick="soma()">Somar</button>
+	<button onclick="subtrai()">Subtrair</button>
+	<button onclick="multiplica()">Multiplicar</button>
+	<button onclick="divide()">Dividir</button>
+	<br><br>
+	<label>Resultado:</label>
+	<input type="number" id="resultado">
+	<script>
+		function soma() {
+			var num1 = parseFloat(document.getElementById("num1").value);
+			var num2 = parseFloat(document.getElementById("num2").value);
+			var resultado = num1 + num2;
+			document.getElementById("resultado").value = resultado;
+		}
+		function subtrai() {
+			var num1 = parseFloat(document.getElementById("num1").value);
+			var num2 = parseFloat(document.getElementById("num2").value);
+			var resultado = num1 - num2;
+			document.getElementById("resultado").value = resultado;
+		}
+		function multiplica() {
+			var num1 = parseFloat(document.getElementById("num1").value);
+			var num2 = parseFloat(document.getElementById("num2").value);
+			var resultado = num1 * num2;
+			document.getElementById("resultado").value = resultado;
+		}
+		function divide() {
+			var num1 = parseFloat(document.getElementById("num1").value);
+			var num2 = parseFloat(document.getElementById("num2").value);
+			var resultado = num1 / num2;
+			document.getElementById("resultado").value = resultado;
+		}
+	</script>
+</body>
+</html>
